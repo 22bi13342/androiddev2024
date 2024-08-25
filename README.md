@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
+* Name: Tran Bao Nguyen
+* ID: 22BI13342
+* Group ID: 7
 * Project Name: *Your Project Name here*
