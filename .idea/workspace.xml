@@ -20,6 +20,16 @@
           <theme>@style/Theme.WeatherActivity</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_weather_and_forcast.xml">
+        <config>
+          <theme>@style/Theme.WeatherActivity</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_weather_and_forcast2.xml">
+        <config>
+          <theme>@style/Theme.WeatherActivity</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
@@ -27,13 +37,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="008a9ef8-d11b-424d-ae13-be7d2ed06d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/WeatherFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/WeatherAndForecastFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/WeatherPageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weather_and_forcast.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/ForecastFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/ForecastFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/WeatherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/edu/usth/weatheractivity/WeatherActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +57,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
