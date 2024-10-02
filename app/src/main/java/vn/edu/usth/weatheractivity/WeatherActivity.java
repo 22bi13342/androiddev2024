@@ -3,6 +3,9 @@ package vn.edu.usth.weatheractivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -15,6 +18,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
+    private Handlertest refreshHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,16 @@ public class WeatherActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.music);
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
+
+        final Handler handler = new Handler(Looper.getMainLooper()) {
+            @Override
+            public void handleMessage(Message msg) {
+                String content = msg.getData().getString("server_response");
+                Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        refreshHandler = new Handlertest(handler);
     }
 
     @Override
@@ -51,7 +65,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         if (id == R.id.action_refresh) {
             // Show a Toast when refresh is clicked
-            Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+            Handlertest.NetworkRequest();
             return true;
         } else if (id == R.id.action_settings) {
             // Start the PrefActivity when settings is clicked
